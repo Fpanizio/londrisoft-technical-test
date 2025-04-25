@@ -265,7 +265,13 @@ const CompanyForm: React.FC = () => {
                 <label htmlFor={field}>
                   {field.charAt(0).toUpperCase() + field.slice(1)}
                 </label>
-                <input id={field} {...register(field as keyof company)} />
+                <input
+                  id={field}
+                  {...register(field as keyof company)}
+                  className={
+                    errors[field as keyof typeof errors] ? "error-border" : ""
+                  }
+                />
                 {errors[field as keyof typeof errors] && (
                   <p className="error">
                     {errors[field as keyof typeof errors]?.message}
@@ -274,14 +280,19 @@ const CompanyForm: React.FC = () => {
               </div>
             ))}
           </div>
-          <button type="submit" className="submit-button" disabled={isSubmitting}>
+          <button
+            type="submit"
+            className="submit-button"
+            disabled={isSubmitting}
+          >
             {isSubmitting ? "Enviando..." : "Atualizar"}
           </button>
         </form>
       )}
       {showNotification && (
         <div className="notification">
-          Formulário enviado com sucesso! verifique o console para mais detalhes.
+          Formulário enviado com sucesso! verifique o console para mais
+          detalhes.
         </div>
       )}
     </div>

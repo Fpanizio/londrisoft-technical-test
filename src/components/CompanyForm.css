@@ -1,3 +1,11 @@
+.error-border {
+  border: 2px solid #ff5f5f !important;
+}
+
+.error-border:focus {
+  border: 2px solid #ff5f5f !important;
+}
+
 .form-container {
   max-width: 900px;
   margin: 0 auto;
@@ -24,6 +32,7 @@ form h1 {
 }
 
 .form-field label {
+  text-transform: capitalize;
   margin-bottom: 0.5rem;
   font-weight: bold;
   color: #444;
@@ -33,6 +42,7 @@ form h1 {
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 4px;
+  outline: none;
 }
 
 .error {
