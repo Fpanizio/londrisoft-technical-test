@@ -53,6 +53,13 @@
   font-size: 1rem;
 }
 
+.error {
+  color: red;
+  font-size: 1rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
   .company-list li {
