@@ -22,16 +22,19 @@ Este projeto é uma aplicação React + TypeScript configurada com Vite. Ele foi
 ## Como Executar o Projeto
 
 1. Clone o repositório:
+
    ```bash
    git clone https://github.com/Fpanizio/londrisoft-technical-test.git
    ```
 
 2. Instale as dependências:
+
    ```bash
    npm install
    ```
 
 3. Inicie o servidor de desenvolvimento:
+
    ```bash
    npm run dev
    ```
@@ -41,10 +44,3 @@ Este projeto é uma aplicação React + TypeScript configurada com Vite. Ele foi
 ## Scripts Disponíveis
 
 - `npm run dev`: Inicia o servidor de desenvolvimento.
-- `npm run build`: Realiza o build para produção.
-- `npm run preview`: Visualiza o build de produção localmente.
-- `npm run lint`: Executa o linter para verificar problemas no código.
-
-## Contato
-
-Para dúvidas ou sugestões, entre em contato com o desenvolvedor responsável.
