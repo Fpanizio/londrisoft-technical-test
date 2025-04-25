@@ -1,0 +1,30 @@
+export interface company {
+  nome: string;
+  fone: string;
+  cpf?: string | undefined;
+  pessoa?: number | undefined;
+  ocupacao?: number | undefined;
+  nomocupacao?: string | undefined;
+  empresa?: number | undefined;
+  cnpj?: string | undefined;
+  insestadual?: string | undefined;
+  atividade?: number | undefined;
+  nomatividade?: string | undefined;
+  endereco?: string | undefined;
+  numero?: number | undefined;
+  complemento?: string | undefined;
+  bairro?: string | undefined;
+  cidade?: string | undefined;
+  codcidade?: number | undefined;
+  estado?: string | undefined;
+  cep?: string | undefined;
+  celular?: string | undefined;
+  email?: string | undefined;
+  contato?: string | undefined;
+  fantasia?: string | undefined;
+  tipo?: number | undefined;
+  nomtipo?: string | undefined;
+  status?: number | undefined;
+  vendedor?: number | undefined;
+  codigo: number;
+}
