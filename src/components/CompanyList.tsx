@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import api from "../api/apiConfig";
-import { company } from "../types/cliente";
+import { company } from "../types/company";
 import "./CompanyList.css";
 
 const CompanyList: React.FC = () => {
