@@ -23,7 +23,7 @@ Este projeto é uma aplicação React + TypeScript configurada com Vite. Ele foi
 
 1. Clone o repositório:
    ```bash
-   git clone <url-do-repositorio>
+   git clone https://github.com/Fpanizio/londrisoft-technical-test.git
    ```
 
 2. Instale as dependências:
