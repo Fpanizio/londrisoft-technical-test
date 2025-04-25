@@ -36,7 +36,7 @@ Este projeto é uma aplicação React + TypeScript configurada com Vite. Ele foi
    npm run dev
    ```
 
-4. Acesse a aplicação no navegador em `http://localhost:3000`.
+4. Acesse a aplicação no navegador em `http://localhost:5173/`.
 
 ## Scripts Disponíveis
 
