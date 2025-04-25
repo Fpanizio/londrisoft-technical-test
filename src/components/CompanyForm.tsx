@@ -6,7 +6,7 @@ import { useFetchCompany } from "../hooks/useFetchCompany";
 import { useNotification } from "../hooks/useNotification";
 import { company } from "../types/company";
 import schema from "../validation/companySchema";
-import "./CompanyForm.css";
+import "../App.css";
 
 const CompanyForm: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -48,7 +48,7 @@ const CompanyForm: React.FC = () => {
       ) : (
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="form-grid">
-            {["nome", "fone", "cpf", "pessoa", "ocupacao", "nomocupacao", "empresa", "cnpj", "insestadual", "atividade", "nomatividade", "endereco", "numero", "complemento", "bairro", "cidade", "codcidade", "estado", "cep", "celular", "email", "contato", "fantasia", "tipo", "nomtipo", "status", "vendedor"].map((field) => (
+            {Object.keys(schema.fields).map((field) => (
               <div key={field} className="form-field">
                 <label htmlFor={field}>
                   {field.charAt(0).toUpperCase() + field.slice(1)}

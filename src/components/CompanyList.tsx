@@ -46,9 +46,13 @@ const CompanyList: React.FC = () => {
         <>
           <ul className="company-list">
             {companies.map((company) => (
-              <li key={company.codigo}>
-                <span>{company.nome}</span>
-                <button onClick={() => handleEdit(company.codigo)}>
+              <li key={company.codigo} className="company-item">
+                <div className="company-info">
+                  <h3>{company.nome}</h3>
+                  <p><strong>Código:</strong> {company.codigo}</p>
+                  <p><strong>Endereço:</strong> {company.endereco}</p>
+                </div>
+                <button className="edit-button" onClick={() => handleEdit(company.codigo)}>
                   Editar
                 </button>
               </li>
